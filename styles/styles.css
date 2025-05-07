@@ -1,0 +1,271 @@
+/* Сброс дефолтных стилей */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Основные стили */
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.page {
+  background-color: #282829;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.header, .main, .footer {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.container {
+  padding: 0 162px;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 150%;
+  letter-spacing: .4px;
+  transition: color .3s ease;
+}
+
+.menu__link:hover {
+  color: #d5c9be;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #222222;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  padding: 30px 51px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all .3s ease;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.button_footer {
+  padding: 21px 53px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  justify-self: end;
+}
+
+.top-menu-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 162px);
+  top: 30px;
+  padding: 14px 0;
+}
+
+.logo {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Prata', serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: .3px;
+}
+
+.top-menu {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  max-height: fit-content;
+  background-color: #222222;
+  min-height: 100vh;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-top: 102px;
+  padding-left: 162px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.banner-info {
+  max-width: 700px;
+}
+
+.banner-title {
+  font-family: 'Prata', serif;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 120%;
+}
+
+.banner-text {
+  font-size: 50px;
+  line-height: 120%;
+}
+
+.banner-list {
+  list-style: none;
+  margin: 64px 0 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.banner-item {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background-color: rgba(40, 40, 41, .7);
+  width: fit-content;
+  border-radius: 4px;
+  padding-right: 20px;
+}
+
+.banner-item::before {
+  content: '';
+  width: 39px;
+  height: 37px;
+  display: block;
+  background-image: url('../images/icons/check-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 39px 37px;
+}
+
+.banner-image-container {
+  display: block;
+  position: relative;
+  width: 763px;
+  height: inherit;
+}
+
+.banner-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right bottom;
+  position: absolute;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 0;
+  border-top: 2px solid #d5c9be;
+  border-bottom: 2px solid #d5c9be;
+}
+
+.footer-menu__link {
+  font-size: 20px;
+}
+
+.footer-grid {
+  padding: 42px 0 52px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 38px;
+}
+
+.social-list {
+  justify-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.footer-copyright {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.footer-privacy-link, .footer-terms-link {
+  width: fit-content;
+  display: block;
+  font-size: 20px;
+  line-height: 150%;
+  text-decoration: none;
+  color: #d5c9be;
+  transition: color .3s ease;
+}
+
+.footer-privacy-link:hover, .footer-terms-link:hover {
+  color: #ffffff;
+}
+
+.footer-privacy-link {
+  justify-self: center;
+}
+
+.footer-terms-link {
+  justify-self: end;
+}
