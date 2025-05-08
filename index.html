@@ -9,20 +9,37 @@
   </head>
   <body class="page">
     <header class="header">
+      <div class="top-menu-fixed">
+        <a href="#" class="logo">Aurelia</a>
+        <nav class="menu top-menu">
+          <button class="mobile-menu__button mobile-menu__button_open" type="menu"></button>
+          <ul class="menu__list menu__list-fixed">
+            <li class="menu__item mobile-menu__item">
+              <a href="#" class="menu__link">studio</a>
+            </li>
+            <li class="menu__item mobile-menu__item">
+              <a href="#" class="menu__link">portfolio</a>
+            </li>
+            <li class="menu__item mobile-menu__item">
+              <a href="#" class="menu__link">services</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="banner">
         <div class="banner-container">
           <div class="top-menu-container">
-            <a href="#" class="logo">Lorem</a>
+            <a href="#" class="logo">Aurelia</a>
             <nav class="menu top-menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">consectetur</a>
+                  <a href="#" class="menu__link">studio</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">sit amet</a>
+                  <a href="#" class="menu__link">portfolio</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">eiusmod tempor</a>
+                  <a href="#" class="menu__link">services</a>
                 </li>
               </ul>
             </nav>
@@ -45,8 +62,8 @@
         <div class="banner-image-container">
           <img
             class="banner-image"
-            src="./images/image1.jpg"
-            alt="banner image"
+            src="./images/content/image3.jpeg"
+            alt="Banner image"
           />
         </div>
       </div>
@@ -69,24 +86,50 @@
           </div>
         </div>
       </section>
+      <section class="about">
+        <div class="about__image-container about__image-container_switchable">
+          <img class="about__image" src="./images/content/image2.jpeg" alt="About image 1">
+        </div>
+        <div class="about__info">
+          <ul class="about__list">
+            <li class="about__item">
+              Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor
+            </li>
+            <li class="about__item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            </li>
+            <li class="about__item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            </li>
+            <li class="about__item">
+              Lorem ipsum dolor amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            </li>
+          </ul>
+          <a href="#" class="button about__button">Order</a>
+        </div>
+        <div class="about__image-container">
+          <img class="about__image" src="./images/content/image1.jpeg" alt="About image 2">
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <nav class="menu footer-menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link">consectetur</a>
+            <a href="#" class="menu__link">studio</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">sit amet</a>
+            <a href="#" class="menu__link">portfolio</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">eiusmod tempor</a>
+            <a href="#" class="menu__link">services</a>
           </li>
         </ul>
       </nav>
       <div class="container">
         <div class="footer-grid">
-          <a href="#" class="logo">Lorem</a>
+          <a href="#" class="logo">Aurelia</a>
           <ul class="social-list">
             <li class="social-item">
               <a href="#" class="social-link">
@@ -126,5 +169,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
