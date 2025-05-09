@@ -98,11 +98,11 @@ body:has(.mobile-top-menu-fixed_open) {
 }
 
 .mobile-menu__button_open {
-  background-image: url('../images/icons/hamburger-icon.svg');
+  background-image: url('../assets/images/icons/hamburger-icon.svg');
 }
 
 .mobile-menu__button_close {
-  background-image: url('../images/icons/close-icon.svg');
+  background-image: url('../assets/images/icons/close-icon.svg');
 }
 
 .mobile-top-menu-fixed_open {
@@ -144,7 +144,7 @@ body:has(.mobile-top-menu-fixed_open) {
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 162px);
-  top: 30px;
+  top: 20px;
   padding: 14px 0;
   gap: 30px;
 }
@@ -169,7 +169,7 @@ body:has(.mobile-top-menu-fixed_open) {
 .top-menu {
   width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
 .top-menu-fixed {
@@ -218,6 +218,8 @@ body:has(.mobile-top-menu-fixed_open) {
 }
 
 .banner-text {
+  display: block;
+  margin-top: 20px;
   font-size: clamp(1.25rem, 0.875rem + 1.875vw, 3.125rem);
   line-height: 120%;
 }
@@ -232,15 +234,16 @@ body:has(.mobile-top-menu-fixed_open) {
 
 .banner-list {
   list-style: none;
-  margin: 64px 0 40px;
+  margin: 26px 0 40px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 12px;
 }
 
 .banner-item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 17px;
   background-color: rgba(40, 40, 41, .7);
@@ -254,7 +257,7 @@ body:has(.mobile-top-menu-fixed_open) {
   width: 39px;
   height: 37px;
   display: block;
-  background-image: url('../images/icons/check-icon.svg');
+  background-image: url('../assets/images/icons/check-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 39px 37px;
@@ -288,7 +291,7 @@ body:has(.mobile-top-menu-fixed_open) {
   background-color: #ffffff;
   border-radius: 30px;
   border: 2px solid #d5c9be;
-  background-image: url('../images/image3.png');
+  background-image: url('../assets/images/image3.png');
   background-repeat: no-repeat;
   background-position-x: 430px;
   background-position-y: center;
@@ -303,7 +306,7 @@ body:has(.mobile-top-menu-fixed_open) {
   display: block;
   width: 600px;
   height: 775px;
-  background-image: url('../images/image2.png');
+  background-image: url('../assets/images/image2.png');
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
@@ -362,7 +365,7 @@ body:has(.mobile-top-menu-fixed_open) {
 }
 .contact-form__checkbox:checked + span {
     background-color: #405d65;
-    background-image: url("../images/icons/checkbox-icon.svg");
+    background-image: url("../assets/images/icons/checkbox-icon.svg");
     background-size: 22px 20px;
     background-position: center;
     background-repeat: no-repeat;
@@ -435,7 +438,7 @@ body:has(.mobile-top-menu-fixed_open) {
   top: 40px;
   width: 58px;
   height: 47px;
-  background-image: url('../images/icons/figure1-icon.svg');
+  background-image: url('../assets/images/icons/figure1-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 58px 47px;
