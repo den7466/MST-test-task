@@ -3,40 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Interior design studio - AURELIA</title>
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <meta name="description" content="AURELIA is a leading interior design company specializing in creating unique and functional living spaces. Over 10 years of work, we have completed over 500 projects, transforming ordinary spaces into true works of art">
+    <meta name="keywords" content="">
   </head>
   <body class="page">
     <header class="header">
+      <div class="top-menu-fixed">
+        <a href="#" class="logo">Aurelia</a>
+        <nav class="menu top-menu">
+          <button class="mobile-menu__button mobile-menu__button_open" type="menu"></button>
+          <ul class="menu__list menu__list-fixed">
+            <li class="menu__item mobile-menu__item">
+              <a href="#" class="menu__link">studio</a>
+            </li>
+            <li class="menu__item mobile-menu__item">
+              <a href="#" class="menu__link">portfolio</a>
+            </li>
+            <li class="menu__item mobile-menu__item">
+              <a href="#" class="menu__link">services</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="banner">
         <div class="banner-container">
           <div class="top-menu-container">
-            <a href="#" class="logo">Lorem</a>
+            <a href="#" class="logo">Aurelia</a>
             <nav class="menu top-menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">consectetur</a>
+                  <a href="#" class="menu__link">studio</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">sit amet</a>
+                  <a href="#" class="menu__link">portfolio</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">eiusmod tempor</a>
+                  <a href="#" class="menu__link">services</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="banner-info">
-            <h1 class="banner-title">Lorem ipsum dolor sit amet</h1>
-            <span class="banner-text">sed do eiusmod tempor</span>
+            <h1 class="banner-title">Trust the creation</h1>
+            <span class="banner-text">of your ideal home to professionals</span>
             <ul class="banner-list">
               <li class="banner-item">
-                do<span>$10 000</span>consectetur elit
+                <span class="banner-text_dedicated">10 years</span>of impeccable reputation
               </li>
-              <li class="banner-item"><span>30%</span>sed do eiusmod tempor</li>
               <li class="banner-item">
-                do<span>17%</span>adipiscing elit sed do
+                <span class="banner-text_dedicated">1500+</span>positive reviews
+              </li>
+              <li class="banner-item">
+                <span class="banner-text_dedicated">95%</span>repeat orders
               </li>
             </ul>
             <a href="#" class="button">Order</a>
@@ -45,59 +66,101 @@
         <div class="banner-image-container">
           <img
             class="banner-image"
-            src="./images/image1.jpg"
-            alt="banner image"
+            src="./assets/images/content/image5.jpg"
+            alt="Banner image"
           />
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="contact-form">
+        <div class="container">
+          <div class="contact-form__container">
+            <h2 class="contact-form__title">How to create a harmonious interior</h2>
+            <form class="contact-form__form" action="/" method="post">
+              <input class="contact-form__input" type="text" name="u-name" id="name" placeholder="Name">
+              <input class="contact-form__input" type="email" name="email" id="email" placeholder="E-mail">
+              <label class="contact-form__label">
+                <input class="contact-form__checkbox visually-hidden"type="checkbox" name="p-policy" id="p-policy">
+                <span></span>
+                I accept Privacy policy
+              </label>
+              <button type="submit" class="button contact-form__button">Submit Form</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__image-container about__image-container_switchable">
+          <img class="about__image" src="./assets/images/content/image6.jpg" alt="About image 1">
+        </div>
+        <div class="about__info">
+          <ul class="about__list">
+            <li class="about__item">
+              Creativity and innovative approach to every project
+            </li>
+            <li class="about__item">
+              Responsibility for the result at all stages of work
+            </li>
+            <li class="about__item">
+              Respect for the client's wishes and budget
+            </li>
+            <li class="about__item">
+              Professionalism and attention to detail
+          </ul>
+          <a href="#" class="button about__button">Order</a>
+        </div>
+        <div class="about__image-container">
+          <img class="about__image" src="./assets/images/content/image7.jpg" alt="About image 2">
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <nav class="menu footer-menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link">consectetur</a>
+            <a href="#" class="menu__link">studio</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">sit amet</a>
+            <a href="#" class="menu__link">portfolio</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">eiusmod tempor</a>
+            <a href="#" class="menu__link">services</a>
           </li>
         </ul>
       </nav>
       <div class="container">
         <div class="footer-grid">
-          <a href="#" class="logo">Lorem</a>
+          <a href="#" class="logo">Aurelia</a>
           <ul class="social-list">
             <li class="social-item">
               <a href="#" class="social-link">
-                <img class="social-image" src="./images/icons/instagram-icon.svg" alt="Instagram">
+                <img class="social-image" src="./assets/images/icons/instagram-icon.svg" alt="Instagram">
               </a>
             </li>
             <li class="social-item">
               <a href="#" class="social-link">
-                <img class="social-image" src="./images/icons/tiktok-icon.svg" alt="TikTok">
+                <img class="social-image" src="./assets/images/icons/tiktok-icon.svg" alt="TikTok">
               </a>
             </li>
             <li class="social-item">
               <a href="#" class="social-link">
-                <img class="social-image" src="./images/icons/linkedin-icon.svg" alt="LinkedIn">
+                <img class="social-image" src="./assets/images/icons/linkedin-icon.svg" alt="LinkedIn">
               </a>
             </li>
             <li class="social-item">
               <a href="#" class="social-link">
-                <img class="social-image" src="./images/icons/facebook-icon.svg" alt="Facebook">
+                <img class="social-image" src="./assets/images/icons/facebook-icon.svg" alt="Facebook">
               </a>
             </li>
             <li class="social-item">
               <a href="#" class="social-link">
-                <img class="social-image" src="./images/icons/telegram-icon.svg" alt="Telegram">
+                <img class="social-image" src="./assets/images/icons/telegram-icon.svg" alt="Telegram">
               </a>
             </li>
             <li class="social-item">
               <a href="#" class="social-link">
-                <img class="social-image" src="./images/icons/youtube-icon.svg" alt="YouTube">
+                <img class="social-image" src="./assets/images/icons/youtube-icon.svg" alt="YouTube">
               </a>
             </li>
           </ul>
@@ -108,5 +171,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
